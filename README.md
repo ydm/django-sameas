@@ -2,11 +2,11 @@
 Repeat template blocks with ease!
 
 ## What is it? ##
-`SameAs` is a small Django application that provides you with an
+**SameAs** is a small Django application that provides you with an
 easy-to-use template tag to replicate a block.
 
-For example you may want to repeat your `title` block somewhere else
-in your page.
+For example you may want to repeat your title block somewhere else in
+your page.
 ```html
 {% load sameastags %}
 ...
