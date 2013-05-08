@@ -1,12 +1,12 @@
 # SameAs #
-Repeat template blocks!
+Repeat template blocks with ease!
 
 ## What is it? ##
 `SameAs` is a small Django application that provides you with an
-easy-to-use template tag that replicates a block.
+easy-to-use template tag to replicate a block.
 
-For example you may want to repeat your `title` block inside your
-page.
+For example you may want to repeat your `title` block somewhere else
+in your page.
 ```html
 {% load sameastags %}
 ...
@@ -20,7 +20,7 @@ page.
 ```
 It's as simple as this.
 
-The real benefit of this feature is when used with template
+But the real benefit of this feature is when used with template
 inheritance.
 ```html
 base.html:
@@ -37,15 +37,15 @@ inner.html
 ```
 
 ## Installation ##
-The project is currently not available on PyPI.  
-To install the project, you need to
-* Clone
-* Add `sameas` package to PYTHONPATH
-* Add `'sameas'` to your INSTALLED_APPS
+The application is currently not available on PyPI.  To install it,
+you need to
+* Clone this repository
+* Add **sameas** package to PYTHONPATH
+* Add **'sameas'** to your INSTALLED_APPS
 
 ### Requirements ###
 * Python 2 or 3
-* Django (tested with 1.5, but I'm expect it to work with previous
+* Django (tested against 1.5, but I expect it to work with previous
   versions too)
 
 ## Tests ##
@@ -60,7 +60,7 @@ To run the tests simply use
 ## License ##
 This project is licensed under LGPLv3.  Read LICENSE for details.
 
-### Is it on PyPI? ###
-No.  I don't want to flood PyPI with something as simple as 20 lines
+#### Why it's not on PyPI? ####
+I don't want to flood PyPI with something as simple as 20 lines
 of code.  If the project turns out to be of valuable help, I'll
 reconsider.
