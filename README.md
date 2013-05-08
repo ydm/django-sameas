@@ -36,6 +36,11 @@ inner.html
 ...
 ```
 
+#### Please note ####
+Tag library loading should occur **before any blocks** are declared.
+It's good if you place `{% load sameastags %}` somewhere at the top of
+your page.
+
 ## Installation ##
 The application is currently not available on PyPI.  To install it,
 you need to
