@@ -6,6 +6,7 @@ setup(
     author='Yordan Miladinov',
     author_email='jordanMiladinov@gmail.com',
     packages=['sameas','sameas.templatetags'],
+    package_data={'sameas':['templates/*/*/*.html']},
     url='https://github.com/ydm/django-sameas',
     license='LICENSE',
     description='Django application that provides you with an easy-to-use template tag that replicates a block.',
