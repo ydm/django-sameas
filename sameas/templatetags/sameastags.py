@@ -62,7 +62,7 @@ class BlockNodeProxy(BlockNode):
 
     def render(self, context):
         result = super(BlockNodeProxy, self).render(context)
-        context[_block_key(self.name)] = self
+        context.setdefault(_block_key(self.name), self)
         return result
 
 
