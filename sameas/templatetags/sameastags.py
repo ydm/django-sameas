@@ -36,7 +36,7 @@ class SameNode(template.Node):
         self.block_name = block_name
 
     def render(self, context):
-        return context[_block_key(self.block_name)]
+        return context[_block_key(self.block_name)].render(context)
 
 
 @register.tag('sameas')
@@ -62,7 +62,7 @@ class BlockNodeProxy(BlockNode):
 
     def render(self, context):
         result = super(BlockNodeProxy, self).render(context)
-        context[_block_key(self.name)] = result
+        context.setdefault(_block_key(self.name), self)
         return result
 
 
